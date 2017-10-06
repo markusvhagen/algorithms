@@ -18,5 +18,7 @@ Notation | Name | Description
 
 ### Binary search
 **Best-case performance:** O(1)
+
 **Worst-case performance:** O(log n)
+
 **Comments:** The best-case performance **O(1)** only happens if the first element that the algorithm checks, is the actual element that the user are searching for. Because the binary search algorithm halves the dataset for each iteration, the next dataset needs to be of size floor(log<sub>2</sub> k), where k is the size of the dataset from the previous iteration. Therefore the worst-case performance needs to be **O(log n)**.
