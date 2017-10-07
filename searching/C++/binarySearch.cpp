@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string>
 #include <cmath>
 
 using namespace std;
@@ -12,20 +11,16 @@ int binarySearch(vector<int> inArray, int searchFor) {
 
     while (maxIndex >= minIndex) {
         midIndex = floor((minIndex+maxIndex)/2);
-        cout << "Now following midindex: " << midIndex << endl;
 
         if (searchFor < inArray[midIndex]) {
-            cout << "lower" << endl;
             maxIndex = midIndex - 1;
         }
 
         else if (searchFor > inArray[midIndex]) {
-            cout << "higher" << endl;
             minIndex = midIndex + 1;
         }
 
         else if (searchFor == inArray[midIndex]) {
-            cout << "found it!";
             return midIndex;
             break;
         }
