@@ -7,13 +7,16 @@ using namespace std;
 vector<int> bubbleSort(vector<int> array) {
     int i = 0;
     int numberOfIndexes = array.size();
-    while (i < numberOfIndexes) {
+    bool doneSorting = false;
+    while ((i < numberOfIndexes) && !(doneSorting)) {
+        doneSorting = true;
         for (int j = 0; j < numberOfIndexes; j++) {
             if (array[j] > array[j+1] && j != numberOfIndexes) {
                 int currentIndex = array[j];
                 int nextIndex = array[j+1];
                 array[j] = nextIndex;
                 array[j+1] = currentIndex;
+                doneSorting = false;
             }
         }
         numberOfIndexes--;
