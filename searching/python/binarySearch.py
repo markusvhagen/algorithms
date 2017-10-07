@@ -7,7 +7,7 @@ def binarySearch(array, searchFor):
     maxIndex = len(array) - 1
     midIndex = math.floor((minIndex + maxIndex)/2)
 
-    while maxIndex > minIndex:
+    while maxIndex >= minIndex:
         midIndex = math.floor((minIndex + maxIndex)/2)
 
         if searchFor < array[midIndex]:
