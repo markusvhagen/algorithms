@@ -1,5 +1,5 @@
 # algorithms
-I am trying to learn different algorithms, right now searching and sorting with arrays. First writing the algorithm in python for understanding, then in JavaScript to make it interactive. Finally I write it in C++ for the fastest running time, and at the same time learning C++.
+Different search and sort algorithms in python and C++.
 
 # Big-Oh notation
 A way to express how an algorithm scales, also known as time complexity. What is the difference in how much time an algorithm use to decide an output between 10 elements and 1000 elements? Down below is a table with information about this. All logarithms in the table under are in base 2.
