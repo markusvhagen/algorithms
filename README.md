@@ -17,8 +17,13 @@ Notation | Name | Description
 ## Searching
 
 ### Binary search
-**Best-case performance:** O(1)
+**Best-case performance:** O(1) <br>
+**Worst-case performance:** O(log n) <br>
+**Analysis:** The best-case performance **O(1)** only happens if the first element that the algorithm checks, is the actual element that the user are searching for. Because the binary search algorithm halves the dataset for each iteration, the next dataset needs to be of size floor(log<sub>2</sub> k), where k is the size of the dataset from the previous iteration. Therefore the worst-case performance needs to be **O(log n)**.
 
-**Worst-case performance:** O(log n)
+## Sorting
 
-**Comments:** The best-case performance **O(1)** only happens if the first element that the algorithm checks, is the actual element that the user are searching for. Because the binary search algorithm halves the dataset for each iteration, the next dataset needs to be of size floor(log<sub>2</sub> k), where k is the size of the dataset from the previous iteration. Therefore the worst-case performance needs to be **O(log n)**.
+### Bubble sort
+**Best-case performance:** O(n) <br>
+**Worst-case performance:** O(n^2) <br>
+**Analysis:** If the array is already sorted, the algorithm will iterate once through all the elements. In the worst-case the outer loop will iterate **n** times, and the inner loop will also iterate **n** times, making it **n*n* = n^2** iterations.
